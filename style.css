@@ -1,0 +1,306 @@
+/* html{
+  background-color:blue;
+} */
+body{
+
+  background: #0b0b0b;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100% !important;
+  /* overflow: hidden; */
+  
+  }
+.edge {
+  height: 0px;
+
+  background-color: #0b0b0b;
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+.nav {
+  text-align: left;
+  height: 100px;
+
+  margin-top: 40px;
+
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+
+  left: 1000px;
+  top: -130px;
+  padding: 0px 30px 0px 0px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  /*   background-color:blue; */
+}
+.material-icons {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  margin-right: 10px;
+  fill: #fff;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  background-size: 100% 100%;
+  /*   object-fit: cover; */
+}
+/* =================================================== */
+/* =================================================== */
+/* =================================================== */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(18, 18, 18);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.heading > h1
+{
+position: relative;
+bottom: 90px;
+left: 110px;
+
+}
+
+
+
+.search {
+width: 120%;
+position: relative;
+bottom: 180px;
+right: 100px;
+display: flex;
+}
+
+.searchTerm {
+width: 100%;
+border: 3px solid #508dff;
+border-right: none;
+padding: 5px;
+height: 30px;
+border-radius: 5px 0 0 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+color: #000000;
+}
+
+.searchButton {
+width: 40px;
+height: 30px;
+border: 3px solid #508dff;
+background: #6d6868;
+text-align: center;
+color: #ff0000;
+border-radius: 0 5px 5px 0;
+cursor: pointer;
+font-size: 20px;
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+width: 30%;
+position: relative;
+
+ top: 80%;
+left: 85%;
+transform: translate(-50%, -50%);
+}
+/* ==================================================== */
+/* ==================================================== */
+/* ==================================================== */
+#pricing {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  height : 500px;
+  margin: 10px;
+  border: 6px solid #508dff;
+  border-radius: 10px;
+  background-color: black; 
+}
+
+.product > .level {
+  background-color: #508dff;
+  color: rgb(0, 0, 0);
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 5px;
+}
+
+.product > ul {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.product > ul > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  background-color: #4b030f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.product > button:hover {
+  background-color: #257C28;
+}
+
+.bt{
+    
+  background-color: #4b030f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  float: right;
+ 
+}
+
+
+
+footer {
+  margin-top: 30px;
+  background-color:rgb(0, 0, 0);
+  padding: 20px;
+  
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+.scroll-right{
+  height:10px;
+ position: relative;
+  font-size: 30px;
+  font-weight: 00;
+  font-family: monospace;
+  color: #f30606
+}
+
+.scroll-right p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 100;
+  line-height: 50px;
+  text-align: center;
+/* Starting position */
+-moz-transform:translateX(100%);
+-webkit-transform:translateX(100%); 
+transform:translateX(100%);
+/* Apply animation to this element */ 
+-moz-animation: scroll-left 10s linear infinite;
+-webkit-animation: scroll-left 10s infinite;
+animation: scroll-left 10s linear
+infinite; 
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+0% { -moz-transform: translateX(100%); }
+100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+0% { -webkit-transform: translateX(100%); }
+100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+0% { 
+-moz-transform: translateX(100%); /* Browser bug fix */
+-webkit-transform: translateX(100%); /* Browser bug fix */
+transform: translateX(100%); 
+}
+100% { 
+-moz-transform: translateX(-100%); /* Browser bug fix */
+-webkit-transform: translateX(-100%); /* Browser bug fix */
+transform: translateX(-100%); 
+}
+}
+
+bt:hover{
+  background-color: #257C28 !important;
+}
